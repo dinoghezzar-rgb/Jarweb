@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Draxx Academy</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(-45deg, #000, #001f2f, #003333, #000);
+    background-size: 400% 400%;
+    animation: gerak 10s infinite;
+    color: white;
+}
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: black;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: gray;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: cyan;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: #1a1a1a;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    box-shadow: 0 0 10px cyan;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div>🐉 Draxx</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Belajar Crypto & Coding 🔥</h1>
+    <p>Upgrade skill lu dari noob jadi pro</p>
+    <a class="btn" href="#">Mulai Sekarang</a>
+</div>
+
+<!-- SECTION -->
+<div class="section">
+    <h2>Kenapa Pilih Gua?</h2>
+
+    <div class="card">
+        <h3>💎 Materi Simple</h3>
+        <p>Mudah dipahami pemula</p>
+    </div>
+
+    <div class="card">
+    <h3>🚀 Cepat Jago</h3>
+    <p>Langsung praktek</p>
+    <button onclick="cepatJago()">Mulai</button>
+</div>
+
+    <div class="card">
+        <h3>🔥 Real Skill</h3>
+        <p>Bukan teori doang</p>
+    </div>
+</div>
+
+<script>
+function klik() {
+    alert("Gas belajar 😏");
+}
+</script>
+
+</body>
+</html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Draxx Academy</title>
+
+<style>
+body >
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(-45deg, #000, #001f2f, #003333, #000);
+    background-size: 400% 400%;
+    animation: gerak 10s infinite;
+    color: white;
+}l
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* SECTION */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* FORM */
+.form-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px cyan;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: cyan;
+    border: none;
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">🐉 Draxx Academy</div>
+
+<div class="hero">
+    <h1>Belajar Dari Nol 🔥</h1>
+    <p>Scroll ke bawah 👇</p>
+</div>
+
+<div class="section">
+    <h2>Login Demo</h2>
+
+    <div class="form-box">
+        <input type="email" id="email" placeholder="Masukkan Email">
+        <input type="password" id="pass" placeholder="Password">
+        <button onclick="login()">Login</button>
+
+        <p id="output"></p>
+    </div>
+</div>
+
+<script>
+function login() {
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
+
+    if(email === "" || pass === "") {
+        document.getElementById("output").innerText = "Isi dulu bro 😏";
+    } else {
+        document.getElementById("output").innerText =
+        "Login berhasil (demo) 🔥";
+    }
+}
+</script>
+
+</body>
+</html>
+<div class="section">
+    <h2>📚 Materi Belajar</h2>
+
+    <button onclick="materi1()">HTML Dasar</button>
+    <button onclick="materi2()">CSS Dasar</button>
+    <button onclick="materi3()">JavaScript Dasar</button>
+
+    <div id="materiBox" style="margin-top:20px;"></div>
+</div>
+
+<script>
+function materi1() {
+    document.getElementById("materiBox").innerHTML =
+    "<h3>HTML Dasar</h3>" +
+    "<p>HTML adalah struktur web.</p>" +
+    "<ul>" +
+    "<li>&lt;h1&gt; untuk judul</li>" +
+    "<li>&lt;p&gt; untuk teks</li>" +
+    "<li>&lt;button&gt; untuk tombol</li>" +
+    "</ul>";
+}
+
+function materi2() {
+    document.getElementById("materiBox").innerHTML =
+    "<h3>CSS Dasar</h3>" +
+    "<p>CSS untuk tampilan.</p>" +
+    "<ul>" +
+    "<li>color → warna</li>" +
+    "<li>font-size → ukuran</li>" +
+    "<li>background → background</li>" +
+    "</ul>";
+}
+
+function materi3() {
+    document.getElementById("materiBox").innerHTML =
+    "<h3>JavaScript Dasar</h3>" +
+    "<p>JavaScript bikin web hidup.</p>" +
+    "<ul>" +
+    "<li>alert() → popup</li>" +
+    "<li>onclick → klik</li>" +
+    "<li>function → aksi</li>" +
+    "</ul>";
+}
+</script>
+<function cepatJago() {
+    document.getElementById("materiBox").innerHTML =
+    "<h3>🚀 Mode Cepat Jago</h3>" +
+    "<img src='foto.jpg' style='width:150px; border-radius:20px;'>" +
+    "<p>Belajar cepat coding 🔥</p>";
+}
